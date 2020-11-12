@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="script.css">
+    <title>
+        CAN YOU SEE ME!
+    </title>
+</head>
+<body>
+    <style>
+        .jumbotron{
+            font-size: large;
+            padding-left: 40px;
+            
+        }
+
+        #bar{
+            font-size: 15px;
+            font-weight: bolder;
+
+            margin-bottom:26px;
+            margin-left: 32px;
+
+            border-radius: 7px;
+            border-width: 6px;
+
+            padding: 10px 22px;
+
+        }
+
+        #extra6{
+            font-size: 20px;
+            padding: 10px 22px;
+            margin: 4px 4px;
+            border-width: 6px;
+
+        }
+
+        .equal{
+            padding-left: 100px;
+        }
+    </style>
+    
+    <div class="main_container" id="home">
+	
+        <div class="navbar">
+            <div class="logo">
+                <a href="MP.html">MATHBEE</a>
+            </div>
+            <div class="navbar_items">
+                <ul>
+                    <!-- <li><a href="#">home</a></li> -->
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#category">Category</a></li>
+                    <!-- <li><a href="#contactus">contact</a></li> -->
+                    <!-- <li><a href="{% url 'login' %}">login</a></li> 
+                    <li><a href="{% url 'register' %}">register</a></li> -->
+                </ul>
+            </div>
+        </div>
+    
+        <div class="banner_image">
+            <div class="banner_content">
+                
+                <h1> simple calculator </h1>
+                <div class="jumbotron">
+                    <form  name="calculator" >
+                    <br><input id="bar" type="textfield" name="ans" value=""><br>
+                    <div class="equal">
+                        <input id="extra6" type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+                    </div> 
+                    </form>
+                </div>
+                <h1><a href="scicalc.html">scientific calculator</a></h1>
+                  
+                
+                <!-- <h1>Making Maths Easy</h1> -->
+            </div>
+        </div>
+    
+        <div class="about" id="about">
+            <h1 class="title">About Us</h1>
+            <p></p>
+        </div>
+    
+        <div class="category" id="category">
+            <h1 class="title">category</h1>
+            <div class="diff_category">
+                <div class="diff_category_item">
+                    <img src="download.jpg" alt="service_image">
+                    <h3 class="sub_title"><a href="eq.html">EQUATION SOLVER</a></h3>
+                    <p>Equation solver for directly calculating answers</p>
+                </div>
+                <div class="diff_category_item">
+                    <img src="download1.jpg" alt="service_image">
+                    <h3 class="sub_title">GRAPH</h3>
+                    <p>Graph implementation for better undetstanding of equations</p>
+                </div>
+                <div class="diff_category_item">
+                    <img src="images.jpg" alt="service_image">
+                    <h3 class="sub_title">ARTICLES</h3>
+                    <p>Articles to keep you up to data about maths</p>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="footer">
+            <a href="#">
+                <ol>
+                    <p>AMAN KASHYAP</p>
+                    <p>ALIKA ABDI</p>    
+                    <p>INDRAMANI PANDEY</p>
+                    <p>DEVANSH AGARWAL</p>
+            
+                </ol>
+            </a>
+        </div>
+    
+    
+        
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

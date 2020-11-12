@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head >
+    <title >Linear Solver (3 var)</title>
+    <link  rel="stylesheet" href="script.css">
+  </head>
+  <body>
+    <style>
+      body{
+                background: url("3325193.jpg") no-repeat top center;   
+            }
+            .threevar{
+                padding-top: 5%;
+                padding-left: 2%;
+                min-height: 100vh;
+                font-size: 200%;
+                font-weight: 200;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+                font-size: 28px;
+                line-height: 20px;
+                color: rgb(19, 90, 102);
+                line-height: normal;
+                /* text-align: center; */
+            }
+            h1{
+                text-align: center;
+                font-size: 40px;
+                font-family: sans-serif;
+                margin-bottom: 1px;
+                padding-top: 60px;
+            }
+            p{
+                text-align: center;
+                font-family: cursive;
+                font-size: 30px;
+            }
+            #click{
+                text-align: center;
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+            table,th,td{
+
+                border: 3px solid black;
+                border-collapse: collapse;
+
+            }
+
+            td{
+
+
+                padding-right: 45px;
+            }
+            th{
+                text-align: center;
+            }
+            button{
+                border: 4px solid black;
+                font-size: 25px;
+            }
+            #ans{
+                font-size: 25px;
+            }
+
+            #T{
+                width: 400px;
+                height: 56px;
+                text-align: right;
+                background-color: #ffcccc;
+                border: 7px solid black;
+                font-size: 40px;
+                left: 2px;
+                top: 2px;
+                color: blue;
+                margin-left: 500px;
+            }
+            #equal{
+                font-size: 25px;
+                border: 5px solid  green;
+                margin-left: 680px;
+
+                margin-top: 30px;
+            }
+    </style>
+
+      <div class="navbar">
+        <div class="logo">
+            <a href="MP.html">MATHBEE</a>
+        </div>
+      </div>
+      <h1>Linear Equation Solver </h1>
+    <div class="threevar">
+
+         
+        <p>ax+by+cz=d </p>
+        <p id="note">(NOTE: Please keep this format in mind while entering the values .)</p>
+        <p> (for three variables)</p>
+        <p>Enter the values of 'a' , 'b' , 'c' and 'd' here :</p>
+
+
+
+        <table id="T">
+          <tr>
+        <th colspan="5">a</th>
+
+          <th colspan="5">b</th>
+          <th colspan="5">c</th>
+            <th colspan="5">d</th>
+        </tr>
+          <tr>
+        <td colspan="5"> <button   onclick="firsta()"> a1</button><p id="dem1"></p> </td>
+
+        <td colspan="5">   <button   onclick="firstb()"> b1</button><p id="dem2"></p> </td>
+        <td colspan="5"> <button   onclick="firstc()"> c1</button><p id="dem3"></p> </td>
+        <td colspan="5"> <button   onclick="firstd()"> d1</button><p id="dem4"></p> </td>
+          </tr>
+          <tr>
+            <td colspan="5"> <button   onclick="seconda()"> a2</button><p id="dem5"></p>  </td>
+            <td colspan="5"> <button   onclick="secondb()"> b2</button><p id="dem6"></p>  </td>
+            <td colspan="5"> <button   onclick="secondc()"> c2</button><p id="dem7"></p> </td>
+        <td colspan="5"> <button   onclick="secondd()"> d2</button><p id="dem8"></p> </td>
+          </tr>
+          <tr>
+            <td colspan="5"> <button   onclick="thirda()"> a3</button><p id="dem9"></p>  </td>
+              <td colspan="5"> <button   onclick="thirdb()"> b3</button><p id="dem10"></p>  </td>
+                <td colspan="5"> <button   onclick="thirdc()"> c3</button><p id="dem11"></p>  </td>
+                  <td colspan="5"> <button   onclick="thirdd()"> d3</button><p id="dem12"></p>  </td>
+          </tr>
+        </table>
+            <button id="equal" type = "button"  onclick = "e()"> = </button> <p id="ans"></p>
+        <p id="click">Click this button to get result.</p>
+
+
+
+
+
+    </div>
+    <script src="threevar.js"></script>
+
+  </body>
+</html>
