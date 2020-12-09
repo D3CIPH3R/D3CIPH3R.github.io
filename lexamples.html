@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Example Of Linear Equation In Two Variable</title>
+        <link  rel="stylesheet" href="script.css">
+  </head>
+	<body>
+        <style>
+            .jumbotron{
+              margin-top: 40px;
+            }
+            body{
+                background: url('3325193.jpg') no-repeat top center;  
+            }
+            
+            h1{
+            text-align: center;
+            font-style: oblique;
+            font-size: 40px;
+            color: #ed5a11;
+            text-decoration: underline;
+            text-decoration-style: dashed;
+            }
+            #sen{
+            color: green;
+            }
+            #icon{
+
+            margin-left: 600px;
+            }
+            #one{
+            font-size: 30px;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            color: #570d11;
+            }
+            #n1{
+            font-size: 20px;
+            }
+
+            .container{
+            background-color: lightblue;
+            width: 900px;
+            border: 5px blue;
+            margin-left: 250px;
+            }
+            .gen{
+                font-size: 25px;
+            }
+
+            #num1{
+            font-size: 30px;
+
+            }
+            .boot1{
+            font-size: 20px;
+            width: 600px;
+            border: 5px dotted red;
+            padding: 50px;
+            margin: 20px;
+            background-color: white;
+            font-weight: bolder;
+
+            margin-bottom: 5px;
+            margin-top: 20px;
+            }
+
+            .Q0{
+            font-weight: bolder;
+            width: 600px;
+            border: 5px dotted blue;
+            padding: 50px;
+            margin: 20px;
+            background-color:  white;
+                font-size: 20px;font-family:cursive;
+            }
+
+
+            .Q1{
+            width: 300px;
+            border: 5px dotted green;
+            font-weight: bolder;
+            padding: 50px;
+            margin: 20px;
+            background-color:  white;
+            font-size: 20px;
+            font-family: cursive;
+
+            }
+
+            .Q2{font-weight: bolder;
+            width: 300px;
+            border: 5px dotted brown;
+            padding: 50px;
+            margin: 20px;
+            background-color:  white;
+                font-size: 20px;font-family: cursive;
+
+            }
+            #p2{
+            font-size: 20px;
+            color:  #091638;
+            font-family: cursive;
+            }
+
+        </style>
+        <!-- <div class="navbar">
+            <div class="logo">
+                <a href="index.html">MATHBEE</a>
+            </div>
+        </div> -->
+        
+    <div class="jumbotron"> 
+            <h1>Some Examples Of Linear Equation In Two Variables </h1>
+
+    <svg id="icon" width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-book" fill="green" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+    </svg>
+    <hr>
+
+		<b id="one">Factorisation Of a Linear equation In Two Variable:</b>
+    <p id="n1" align="right">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-square" fill="blue" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"/>
+      </svg>
+      (<b>NOTE:</b> Eliminate one unknown variable either x or y from both the equations.)</p>
+
+    <div class="container">
+      <div class="gen">
+				<p id="num1">(a) <ins>General Equation Problem</ins></p>
+        <div class="boot1">
+        <pre><b>a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub> = 0</b>.................(i)<br><b>a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub> = 0</b>................(ii) <p id="sen"> 	<br  >Now, eliminate y from both the equations (i) and (ii)<br >Multiply eq-(i) by b<sub>2</sub> and eq-(ii) by b<sub>1</sub><br> </p>
+				<br>a<sub>1</sub>b<sub>2</sub>x + b<sub>1</sub>b<sub>2</sub>y + c<sub>1</sub>b<sub>2</sub> = 0<br>a<sub>2</sub>b<sub>1</sub>x + b<sub>2</sub>b<sub>1</sub>y + c<sub>2</sub>b<sub>1</sub> = 0<br> (-)    (-)     (-)<hr width="67%" align="left" color="black">(a<sub>1</sub>b<sub>2</sub>-a<sub>2</sub>b<sub>1</sub>)x + (c<sub>1</sub>b<sub>2</sub>-c<sub>2</sub>b<sub>1</sub>) = 0<hr width="67%" align="left" color="black"><br>So x is equal to:<br><b>x=-(c<sub>1</sub>b<sub>2</sub>-c<sub>2</sub>b<sub>1</sub>)/(a<sub>1</sub>b<sub>2</sub>-a<sub>2</sub>b<sub>1</sub>)</b>..................(iii)<br><br>Now, eliminate x from both the equations (i) and (ii)<br>Multiply eq-(i) by a<sub>2</sub> and eq-(ii) by a<sub>1</sub><br><br>a<sub>1</sub>a<sub>2</sub>x + b<sub>1</sub>a<sub>2</sub>y + c<sub>1</sub>a<sub>2</sub> = 0<br>a<sub>2</sub>a<sub>1</sub>x + b<sub>2</sub>a<sub>1</sub>y + c<sub>2</sub>a<sub>1</sub> = 0<br> (-)    (-)     (-)<hr width="67%" align="left" color="black">(b<sub>1</sub>a<sub>2</sub>-b<sub>2</sub>a<sub>1</sub>)y + (c<sub>1</sub>a<sub>2</sub>-c<sub>2</sub>a<sub>1</sub>) = 0<hr width="67%" align="left" color="black"><br>So y is equal to:<br><b>y=-(c<sub>1</sub>a<sub>2</sub>-c<sub>2</sub>a<sub>1</sub>)/(b<sub>1</sub>a<sub>2</sub>-b<sub>2</sub>a<sub>1</sub>)</b>....................(iv)<br><br><b>The equation (iii) and (iv) represent </b>
+			<p>the values of unknown variables x and y.</p></pre><br>
+
+      </div>
+        </div>
+        </div>
+<div class="container">
+
+  <div class="gen">
+
+            <p id="num1">
+  	(b) <ins>Numeric Problem</ins></p>
+		<div class="Q0">
+			<pre><b>3x + 2y + 6 = 0</b>...............(i)<br><b>5x + 3y + 7 = 0</b>................(ii)<br>Now, eliminate y from both the equations (i) and (ii)<br>Multiply eq-(i) by 3 and eq-(ii) by 2<br><br> 9x + 6y + 18 = 0<br>10x + 6y + 14 = 0<br>(-)  (-)   (-)<hr width="57%" align="left" color="black">-x  +       4 = 0<hr width="57%" align="left" color="black"><br>So x is equal to:<br><b>x=4</b><br><br>Now, eliminate x from both the equations (i) and (ii)<br>Multiply eq-(i) by 5 and eq-(ii) by 3<br><br>15x + 10y + 30 = 0<br>15x +  9y + 21 = 0<br>(-)   (-)   (-)<hr width="57%" align="left" color="black">        y +  9 = 0<hr width="57%" align="left" color="black"><br>So y is equal to:<br><b>y=-9</b></pre><br>
+</div>  </div >  </div>
+
+
+  	<b id="one">Addition Of Two Linear Equation In Two Variable:</b>
+
+		<p id="n1"  align="right">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-square" fill="blue" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"/>
+      </svg>
+      (<b>NOTE:</b> Be aware about sign)</p>
+			<div class="container">
+
+
+			    <div class="Q1">
+    <ins id="p2">Ex:1</ins><br>
+			<pre> 5x +  9y +  6 = 0<br> 5x +  8y +  7 = 0<hr width="67%" align="left" color="black">10x + 17y + 14 = 0<hr width="67%" align="left" color="black"></pre>
+</div>
+<div class="Q2">
+		<ins id="p2">Ex:2</ins><br>
+			<pre> 6x + 11y -  6 = 0<br>11x +  8y +  7 = 0<hr width="67%" align="left" color="black">17x + 19y +  1 = 0<hr width="67%" align="left" color="black"></pre><br>
+</div></div>
+		<b id="one">Subtraction Of Two Linear Equation In Two Variable:</b>
+		<p id="n1"  align="right">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-square" fill="blue" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"/>
+      </svg>
+      (<b>NOTE:</b> Be aware about sign)</p>
+			<div class="container">
+
+
+					<div class="Q1">
+		<ins id="p2">Ex:1</ins><br>
+			<pre> 5x +  9y +  6 = 0<br> 7x +  8y -  7 = 0<br>(-)   (-)   (+)<hr width="67%" align="left" color="black">-2x +   y + 13 = 0<hr width="67%" align="left" color="black"></pre>
+</div>
+<div class="Q2">
+		<ins id="p2">Ex:2</ins><br>
+			<pre> 6x + 11y -  6 = 0<br>11x +  8y +  7 = 0<br>(-)   (-)   (-)<hr width="67%" align="left" color="black">-5x +  3y - 13 = 0<hr width="67%" align="left" color="black"></pre>
+
+</div></div></div> 
+
+	</body>
+</html>
