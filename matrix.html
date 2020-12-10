@@ -1,0 +1,344 @@
+
+<html>
+<head>
+  <title>Matrix Multiplication Calculator</title>
+</head>
+<link  rel="stylesheet" href="script.css">
+<script type="text/javascript" src="matrix.js"></script>
+
+<!-- <div style="margin-right: 600px;" class="navbar">
+    <div class="logo">
+        <a href="{% url 'home' %}">MATHBEE</a>
+    </div>
+</div> -->
+
+<body>
+    
+    <style>
+
+        body{
+            background: url('3325193.jpg') no-repeat top center;
+        }
+        .li{
+                padding-top: 0.08%;
+                padding-left: 2%;
+                min-height: 10vh;
+                font-size: 200%;
+                font-weight: 200;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 12px;
+                font-size: 28px;
+                line-height: 10px;
+                color: rgb(19, 90, 102);
+                line-height: normal;
+                /* text-align: center; */
+            }
+        label{float:left;padding:0 0 10px;}
+        h2 {border-bottom: 1px solid #ebebeb;
+        color: #474747;
+        font-family: cursive;
+        font-weight: bolder;
+        font-size: 30px;
+
+        line-height: 130%;
+        }
+        h3{
+
+            color: #474747;
+            font-family: cursive;
+            font-weight: bolder;
+            font-size: 25px;
+
+            line-height: 130%;
+        }
+        #one{color: #474747;
+        font-family: inherit;
+        font-weight: bolder;
+            font-size: 15px;
+        }
+        .frms
+        {
+        margin:0 auto;
+        -moz-border-radius:.3em;
+        -webkit-border-radius:.3em;
+        -o-border-radius:.3em;
+        font-family:Tahoma, Geneva, sans-serif;
+        color:#333;
+        font-size:.9em;
+        line-height:1.2em;
+        }
+        .frms label {font-size: 1em;
+        }
+        .frms select
+        {width:99% !important;
+        }
+        .frms input[type="text"],select
+        {
+        width:30%;
+        background:#fff;
+        border:#ddd 1px solid;
+        border-radius:.35em;
+        -moz-border-radius:.35em;
+        -webkit-border-radius:.35em;
+        -o-border-radius:.35em;
+        padding:0 .5%;
+        margin-top:5px;
+        margin-bottom:15px;
+        height:35px;
+        }
+        .frms input:hover,textarea:hover,select:hover
+        {
+        box-shadow:#dae1e5 0px 0px 5px;
+        -moz-box-shadow:#dae1e5 0px 0px 5px;
+        -webkit-box-shadow:#dae1e5 0px 0px 5px;
+        -o-box-shadow:#dae1e5 0px 0px 5px;
+        }
+        .frms input:focus,textarea:focus,select:focus
+        {
+        -webkit-box-shadow: inset 7px 4px 7px -7px rgba(0,0,0,0.42);
+        -moz-box-shadow: inset 7px 4px 7px -7px rgba(0,0,0,0.42);
+        box-shadow: inset 7px 4px 7px -7px rgba(0,0,0,0.42);
+        border:#9d9983 1px solid;
+        }
+        .frms input[type="button"],input[type="reset"]
+        {
+        padding:7px 14px;
+        font-weight:bold;
+        color:#ff0000;
+        cursor:pointer;
+        border-radius:.3em;
+        -moz-border-radius:.2em;
+        -webkit-border-radius:.2em;
+        -o-border-radius:.2em;
+        margin:10px 0;
+        border:none;
+        }
+        input[type="button"]
+        {
+        background:#ffff1a;
+        border-bottom:#3277bc 3px solid;
+        text-shadow:#214d73 1px 1px 0px;
+        }
+        .frms input[type="reset"]
+        {
+        background:#00ffff;
+        border-bottom:#d95e44 3px solid;
+        text-shadow:#8c3736 1px 1px 0px;
+        }
+
+        .resp_code
+        {
+        margin:100px 10px 10px 300px;
+        padding:10px 20px 10px 20px;
+        font:normal 1em/1.3em Tahoma, Geneva, sans-serif;
+        color:#00cc00;
+        background:  #bce322;
+        border:#ddd 1px solid;
+        border-radius:.25em;
+        overflow:auto;width:50%;
+        }
+        @media screen and (max-width: 480px)
+        {
+        .resp_code
+        {width:auto !important;margin:0px !important;
+        }
+        }
+        #calc{
+        font-size: 20px;
+        font-family: cursive;
+        color: #f8fcf2;
+
+        background-color:#256e69;
+        }
+        #reset{color: #f8fcf2;
+        font-size: 20px;
+        font-family: cursive;
+        background-color:#25276e;
+        }
+        #amat{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #a11{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #a12{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #a13{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #a21{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #a22{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #a23{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #a31{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #a32{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #a33{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+
+        #b11{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #b12{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #b13{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #b21{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #b22{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #b23{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #b31{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #b32{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #b33{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+        #bmat{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #1d2f5c;
+        }
+
+    </style>
+     <div class="navbar" style="margin-right: 500px">
+        <div class="logo">
+            <a href="index.html">MATHBEE</a>
+        </div>
+    </div>
+    
+    <div class="li">
+    <div class='resp_code'>
+    <div align='center'><h2 >Multiplication Of Matrices </h2></div><div class="frms" id='maindiv'>
+    <div class='clear'></div>
+    <form name=first>
+    <div align='left' style='margin-bottom:20px;'><h3> Matrix 1 </h3><div><label id="one">Matrix Type</label></div><select id=amat onchange=marka()>
+    <option value=1>3x3</option>
+    <option value=2>3x2</option>
+    <option value=3>2x3</option>
+    <option value=4>3x1</option>
+    <option value=5>1x3</option>
+    <option value=6>2x2</option>
+    </select>
+    </div> <div>
+    <div><span><input id=a11 onkeyup=check(this) type='text' maxlength=10> </span>
+    <span> <input id=a12 onkeyup=check(this) type='text'> </span>
+    <span> <input id=a13 onkeyup=check(this) type='text' maxlength=10> </span></div>
+    <div><span><input id=a21 onkeyup=check(this) type='text'> </span>
+    <span> <input id=a22 onkeyup=check(this) type='text' maxlength=10> </span>
+    <span> <input id=a23 onkeyup=check(this) type='text'> </span></div>
+    <div><span><input id=a31 onkeyup=check(this) type='text' maxlength=10> </span>
+    <span> <input id=a32 onkeyup=check(this) type='text' maxlength=10> </span>
+    <span> <input id=a33 onkeyup=check(this) type='text' maxlength=10> </span></div></div>
+    <div><div align='left' style='margin-bottom:20px;'>
+    <h3> Matrix 2 </h3>
+    <div>
+    <label id="one">Matrix Type </label></div><select id=bmat onchange=marka()>
+    <option value=1>3x3</option>
+    <option value=2>3x2</option>
+    <option value=3>2x3</option>
+    <option value=4>3x1</option>
+    <option value=5>1x3</option>
+    <option value=6>2x2</option></select></div>
+    <div><span><input id=b11 onkeyup=check(this) type='text' maxlength=10> </span>
+    <span> <input id=b12 onkeyup=check(this) type='text' maxlength=10> </span>
+    <span> <input id=b13 onkeyup=check(this) type='text' maxlength=10> </span></div>
+    <div><span><input id=b21 onkeyup=check(this) type='text' maxlength=10> </span>
+    <span> <input id=b22 onkeyup=check(this) type='text' maxlength=10> </span><span>
+    <input id=b23 onkeyup=check(this) type='text' maxlength=10> </span></div>
+    <div><span><input id=b31 onkeyup=check(this)
+    type='text' maxlength=10> </span><span>
+    <input id=b32 onkeyup=check(this)
+    type='text' maxlength=10> </span><span>
+    <input id=b33 onkeyup=check(this)
+    type='text' maxlength=10> </span></div></div><div align='center'>
+    <input id="calc" type=button value=Calculate onclick=madd()>
+    <input id="reset" type='reset' value=Reset><span
+    align='center' style="font-size: 10px;color: #dadada;" id="dumdiv">
+    <a href="https://www.hscripts.com" id="dum" style="font-size: 10px;color: #dadada;text-decoration:none;color: #dadada;">&copy;h</a></span></div>
+    <div class='result'><div>
+    <div><span><input id=aa11 2 type='text' readonly> </span><span> <input id=aa12 2 type='text' readonly> </span><span> <input id=aa13 2 type='text' readonly> </span></div>
+    <div><span><input id=aa21 2 type='text' readonly> </span><span> <input id=aa22 2 type='text' readonly> </span><span> <input id=aa23 2 type='text' readonly> </span></div>
+    <div><span><input id=aa31 2 type='text' readonly> </span><span> <input id=aa32 2 type='text' readonly> </span><span> <input id=aa33 2 type='text' readonly> </span></div></div><div>
+    <div><span><input id=ba11
+    type='text' readonly> </span><span> <input id=ba12
+    type='text' readonly> </span><span> <input id=ba13
+    type='text' readonly> </span></div>
+    <div><span><input id=ba21
+    type='text' readonly> </span><span> <input id=ba22
+    type='text' readonly> </span><span> <input id=ba23
+    type='text' readonly> </span></div>
+    <div>
+    <span>
+    <input id=ba31 type='text' readonly>
+    </span>
+    <span>
+        <input id=ba32 type='text' readonly> </span>
+        <span> <input id=ba33 type='text' readonly> </span>
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+</div>
+    </body>
+</html>

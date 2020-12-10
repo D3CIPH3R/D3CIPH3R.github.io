@@ -13,6 +13,21 @@
 <body>
     
     <style>
+        .li{
+                padding-top: 3%;
+                padding-left: 0%;
+                min-height: 100vh;
+                font-size: 200%;
+                font-weight: 200;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+                font-size: 28px;
+                line-height: 20px;
+                color: rgb(19, 90, 102);
+                line-height: normal;
+                /* text-align: center; */
+            }
         #calculator{
             margin-top: 15px;
             margin-left: 15px;
@@ -35,13 +50,15 @@
         }
     </style>
     
-
-    <div id="calculator" ></div>
-    <div class="navbar">
-        <div class="logo">
-            <a href="index.html">MATHBEE</a>
+  
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">MATHBEE</a>
+            </div>
         </div>
-    </div>
+        <div class="li">
+    <div id="calculator" ></div>
+    
    
 
     <script >
@@ -49,6 +66,6 @@
         var calculator = Desmos.GraphingCalculator(elt);
         calculator.setExpression({id:'graph1', latex:'y=x^2'});
     </script>
-    
+    </div>
 </body>
 </html>
